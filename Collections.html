@@ -1,0 +1,158 @@
+<!DOCTYPE html> <!--deklarasi tipe dokumen untuk menunjukkan bahwa 
+    dokumen adalah dokumen HTML-->
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml"> <!--Bahasa Dokumen (Language = English)-->
+    <head> <!-- elemen kepala dokumen yang berisi informasi meta dan judul dokumen. -->
+        <meta charset="UTF-8">  <!--Pengkodean Karakter Dokumen-->
+        <title>Welcome to Wood Premium Furniture Store!</title> <!--judul dari dokumen HTML yang akan ditampilkan di bilah judul browser.-->
+    
+        <link rel="stylesheet" href="Styles/Layout2.css" type="text/css" />
+        
+    </head> <!--menutup elemen kepala dokumen.-->
+    
+    <body> <!--elemen badan dokumen yang berisi semua konten yang akan ditampilkan di halaman web-->
+        <header> <!--elemen yang menandakan bagian kepala dari halaman web-->
+            <div> <!-- elemen div yang digunakan untuk membuat sekelompok elemen dalam dokumen HTML -->
+                <a class="headerlogo" href="index.html"> <!--elemen anchor (taut) yang digunakan untuk membuat tautan ke halaman lain, class="headerlogo" adalah atribut kelas untuk elemen ini, dan href="index.html" adalah atribut href yang menunjukkan URL halaman yang akan diarahkan saat taut diklik -->
+                    <img src="images/logo.png" /> <!--elemen gambar yang digunakan untuk menampilkan gambar logo. src adalah atribut yang menunjukkan lokasi gambar, dalam hal ini dalam folder "images"-->
+                </a>
+                <span id="headername">Wood Premium Furniture </span> <!--elemen span yang digunakan untuk menampilkan teks "Wood Premium Furniture" dan id="headername" adalah atribut id yang digunakan untuk mengidentifikasi elemen ini dalam CSS atau JavaScript-->
+                <form class="srch" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div> <!--menutup elemen div yang membatasi area logo dan nama di dalam header-->
+    
+            <nav class="backgroundgradient"> <!--elemen navigasi yang berisi daftar tautan menu dan class="backgroundgradient" adalah atribut kelas yang menetapkan gaya latar belakang dengan gradient-->
+                <ul> <!--elemen daftar tak terurut (unordered list) yang berisi item menu-->
+                    <li><a class="navlink" href="index.html">Home</a></li> <!-- List/ elemen item daftar yang berisi tautan ke halaman "Home" dan class="navlink" adalah atribut kelas untuk tautan menu -->
+                    <li><a class="navlink" href="collections.html">Collections</a></li> <!--elemen item daftar yang berisi tautan ke halaman "Home" dan class="navlink" adalah atribut kelas untuk tautan menu-->
+                    <li><a class="navlink" href="contactus.html">Contact Us</a></li> <!--elemen item daftar yang berisi tautan ke halaman "Home" dan class="navlink" adalah atribut kelas untuk tautan menu-->
+                    <li><a class="navlink" href="aboutus.html">About Us</a></li> <!--elemen item daftar yang berisi tautan ke halaman "Home" dan class="navlink" adalah atribut kelas untuk tautan menu-->
+                    <li><a class="navlink" href="checkout.html">Cart
+                        <img src="images/cart.png" /> </a></li>
+                </ul> <!--menutup elemen unordered list-->
+            </nav> <!--menutup elemen navigasi-->
+        </header> <!--menutup bagian kepala dari halaman web-->
+        <div id="welcomeimage"> <!--elemen div yang menunjukkan gambar selamat datang-->
+            <img src="images/furnitureheader.png" /> <!--elemen gambar yang menunjukkan gambar header untuk selamat datang dan src adalah atribut yang menunjukkan lokasi gambar-->
+        </div> <!--menutup elemen div-->
+        <div id="furnitureofthemonth"> <!--elemen div yang menunjukkan gambar "Furniture of the Month"-->
+            <img src="images/cotm.jpg" /> <!--elemen gambar yang menunjukkan gambar "Furniture of the Month" dan src adalah atribut yang menunjukkan lokasi gambar-->
+        </div> <!--menutup elemen div-->
+
+        <section class="furniturebestsellers"> <!--memiliki atribut class dengan nilai furniturebestsellers. Ini digunakan untuk menandai bagian yang berisi produk-produk terlaris.-->
+            <header class="backgroundgradient1">Tables</header> <!--menampilkan judul "Furniture" dengan latar belakang gradien.-->
+            <p class="backgroundgradient2"> 
+                <center><header class="backgroundgradient3">Shoping cart </header></center><br>
+                <div class="emptycartbutton button">Empty cart</div>
+            </p>
+            
+            
+            <section class="furnituredetails"><!--Tag pembuka yang menandakan awal dari elemen bagian yang berisi detail furniture.-->
+        
+                
+                <figure class="productarticlefigure"><!--Tag pembuka untuk menampilkan gambar dan deskripsi furniture.-->
+                    <img id="expandedimg" class="productarticleimage" src="images/furniture/row_dt001_0.jpg"><!--Tag gambar utama furniture.-->
+                    
+        
+                </figure><!--Tag penutup untuk elemen <figure>, menandakan akhir dari elemen yang memuat gambar-gambar tersebut.-->
+                <div class="productarticlecontent"><!--Tag pembuka untuk konten artikel produk.-->
+                    <header class="furni">Furniture 1</header>
+                    <p class="productarticledescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis neque laborum distinctio cum natus similique, hic, doloremque facilis omnis tenetur ducimus alias dolores exercitationem eius odit, magnam sint. Accusantium, beatae?</p><!--Deskripsi furniture.-->
+                    <P class="productarticleprice">$120</P><!--Harga furniture.-->
+                    <div class="addtocartbutton button">Add to cart</div><br><!--Tombol "Add to cart".-->
+                </div><!--Ini tag penutup untuk div-->
+                </section>
+        </section>
+
+        <section class="furnituredetails"><!--Tag pembuka yang menandakan awal dari elemen bagian yang berisi detail furniture.-->
+        
+            
+            
+            <figure class="productarticlefigure"><!--Tag pembuka untuk menampilkan gambar dan deskripsi furniture.-->
+                <img id="expandedimg" class="productarticleimage" src="images/furniture/row_dt002_0.jpg"><!--Tag gambar utama furniture.-->
+    
+            </figure><!--Tag penutup untuk elemen <figure>, menandakan akhir dari elemen yang memuat gambar-gambar tersebut.-->
+    
+            <div class="productarticlecontent"><!--Tag pembuka untuk konten artikel produk.-->
+                <header class="furni">Furniture 2</header>
+                <p class="productarticledescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis neque laborum distinctio cum natus similique, hic, doloremque facilis omnis tenetur ducimus alias dolores exercitationem eius odit, magnam sint. Accusantium, beatae?</p><!--Deskripsi furniture.-->
+                <P class="productarticleprice">$146</P><!--Harga furniture.-->
+                <div class="addtocartbutton button">Add to cart</div><br><!--Tombol "Add to cart".-->
+            </div><!--Ini tag penutup untuk div-->
+        </section><!--Tag penutup untuk elemen-->
+
+        <section class="furnituredetails"><!--Tag pembuka yang menandakan awal dari elemen bagian yang berisi detail furniture.-->
+        
+            
+            
+            <figure class="productarticlefigure"><!--Tag pembuka untuk menampilkan gambar dan deskripsi furniture.-->
+                <img id="expandedimg" class="productarticleimage" src="images/furniture/row_dt003_0.jpg"><!--Tag gambar utama furniture.-->
+    
+            </figure><!--Tag penutup untuk elemen <figure>, menandakan akhir dari elemen yang memuat gambar-gambar tersebut.-->
+    
+            <div class="productarticlecontent"><!--Tag pembuka untuk konten artikel produk.-->
+                <header class="furni">Furniture 3</header>
+                <p class="productarticledescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis neque laborum distinctio cum natus similique, hic, doloremque facilis omnis tenetur ducimus alias dolores exercitationem eius odit, magnam sint. Accusantium, beatae?</p><!--Deskripsi furniture.-->
+                <P class="productarticleprice">$335</P><!--Harga furniture.-->
+                <div class="addtocartbutton button">Add to cart</div><br><!--Tombol "Add to cart".-->
+            </div><!--Ini tag penutup untuk div-->
+        </section><!--Tag penutup untuk elemen-->
+
+        <section class="furniturebestsellers"> <!--memiliki atribut class dengan nilai furniturebestsellers. Ini digunakan untuk menandai bagian yang berisi produk-produk terlaris.-->
+            <header class="backgroundgradient1">Chairs</header> <!--menampilkan judul "Furniture" dengan latar belakang gradien.-->
+        </section>
+
+        
+            <section class="furnituredetails1"><!--Tag pembuka yang menandakan awal dari elemen bagian yang berisi detail furniture.-->
+                <figure class="productarticlefigure"><!--Tag pembuka untuk menampilkan gambar dan deskripsi furniture.-->
+                    <img id="expandedimg" class="productarticleimage" src="images/furniture/row_ac001_0.jpg"><!--Tag gambar utama furniture.-->
+        
+                </figure><!--Tag penutup untuk elemen <figure>, menandakan akhir dari elemen yang memuat gambar-gambar tersebut.-->
+        
+                <div class="productarticlecontent"><!--Tag pembuka untuk konten artikel produk.-->
+                    <header class="furni">Accessories 1</header>
+                    <p class="productarticledescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis neque laborum distinctio cum natus similique, hic, doloremque facilis omnis tenetur ducimus alias dolores exercitationem eius odit, magnam sint. Accusantium, beatae?</p><!--Deskripsi furniture.-->
+                    <P class="productarticleprice">$95</P><!--Harga furniture.-->
+                    <div class="addtocartbutton button">Add to cart</div><br><!--Tombol "Add to cart".-->
+                </div><!--Ini tag penutup untuk div-->
+            </section><!--Tag penutup untuk elemen-->
+
+
+            <section class="furnituredetails"><!--Tag pembuka yang menandakan awal dari elemen bagian yang berisi detail furniture.-->
+                <figure class="productarticlefigure"><!--Tag pembuka untuk menampilkan gambar dan deskripsi furniture.-->
+                    <img id="expandedimg" class="productarticleimage" src="images/furniture/row_ac003_0.jpg"><!--Tag gambar utama furniture.-->
+        
+                </figure><!--Tag penutup untuk elemen <figure>, menandakan akhir dari elemen yang memuat gambar-gambar tersebut.-->
+        
+                <div class="productarticlecontent"><!--Tag pembuka untuk konten artikel produk.-->
+                    <header class="furni">Accessories 2</header>
+                    <p class="productarticledescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis neque laborum distinctio cum natus similique, hic, doloremque facilis omnis tenetur ducimus alias dolores exercitationem eius odit, magnam sint. Accusantium, beatae?</p><!--Deskripsi furniture.-->
+                    <P class="productarticleprice">$135</P><!--Harga furniture.-->
+                    <div class="addtocartbutton button">Add to cart</div><br><!--Tombol "Add to cart".-->
+                </div><!--Ini tag penutup untuk div-->
+            </section><!--Tag penutup untuk elemen-->
+
+            <section class="furnituredetails"><!--Tag pembuka yang menandakan awal dari elemen bagian yang berisi detail furniture.-->
+                <figure class="productarticlefigure"><!--Tag pembuka untuk menampilkan gambar dan deskripsi furniture.-->
+                    <img id="expandedimg" class="productarticleimage" src="images/furniture/row_ac015_0.jpg"><!--Tag gambar utama furniture.-->
+        
+                </figure><!--Tag penutup untuk elemen <figure>, menandakan akhir dari elemen yang memuat gambar-gambar tersebut.-->
+        
+                <div class="productarticlecontent"><!--Tag pembuka untuk konten artikel produk.-->
+                    <header class="furni">Accessories 3</header>
+                    <p class="productarticledescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis neque laborum distinctio cum natus similique, hic, doloremque facilis omnis tenetur ducimus alias dolores exercitationem eius odit, magnam sint. Accusantium, beatae?</p><!--Deskripsi furniture.-->
+                    <P class="productarticleprice">$150</P><!--Harga furniture.-->
+                    <div class="addtocartbutton button">Add to cart</div><br><!--Tombol "Add to cart".-->
+                </div><!--Ini tag penutup untuk div-->
+            </section><!--Tag penutup untuk elemen-->
+
+        <footer>
+            <p>Our address is <address>500 Dover Rd, Singapore 139651</address></p> <!-- Alamat toko -->
+            <p class="textcontent">All site contents is copyright %copy;
+                <a class='mainlink' href="http://woodfurniturestore.com">Wood Premium Furniture Store</a>
+            </p> <!-- Hak cipta dan tautan ke situs web -->
+            <p class="smalltext">This Page was Generated on<time> 09:05:12</time></p> <!-- Waktu pembuatan halaman -->
+        </footer>
+    </body> <!-- Menutup elemen badan dokumen -->
+    </html> <!-- Menutup elemen HTML -->

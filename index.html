@@ -1,0 +1,157 @@
+<!DOCTYPE html> <!--deklarasi tipe dokumen untuk menunjukkan bahwa 
+    dokumen adalah dokumen HTML-->
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml"> <!--Bahasa Dokumen (Language = English)-->
+    <head> <!-- elemen kepala dokumen yang berisi informasi meta dan judul dokumen. -->
+        <meta charset="UTF-8">  <!--Pengkodean Karakter Dokumen-->
+        <title>Welcome to Wood Premium Furniture Store!</title> <!--judul dari dokumen HTML yang akan ditampilkan di bilah judul browser.-->
+    
+        <link rel="stylesheet" href="Styles/Layout.css" type="text/css" />
+        
+    </head> <!--menutup elemen kepala dokumen.-->
+    
+    <body> <!--elemen badan dokumen yang berisi semua konten yang akan ditampilkan di halaman web-->
+        <header> <!--elemen yang menandakan bagian kepala dari halaman web-->
+            <div> <!-- elemen div yang digunakan untuk membuat sekelompok elemen dalam dokumen HTML -->
+                <a class="headerlogo" href="index.html"> <!--elemen anchor (taut) yang digunakan untuk membuat tautan ke halaman lain, class="headerlogo" adalah atribut kelas untuk elemen ini, dan href="index.html" adalah atribut href yang menunjukkan URL halaman yang akan diarahkan saat taut diklik -->
+                    <img src="images/logo.png" /> <!--elemen gambar yang digunakan untuk menampilkan gambar logo. src adalah atribut yang menunjukkan lokasi gambar, dalam hal ini dalam folder "images"-->
+                </a>
+                <span id="headername">Wood Premium Furniture </span> <!--elemen span yang digunakan untuk menampilkan teks "Wood Premium Furniture" dan id="headername" adalah atribut id yang digunakan untuk mengidentifikasi elemen ini dalam CSS atau JavaScript-->
+                
+                <form class="srch" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div> <!--menutup elemen div yang membatasi area logo dan nama di dalam header-->
+            
+    
+            <nav class="backgroundgradient"> <!--elemen navigasi yang berisi daftar tautan menu dan class="backgroundgradient" adalah atribut kelas yang menetapkan gaya latar belakang dengan gradient-->
+                <ul> <!--elemen daftar tak terurut (unordered list) yang berisi item menu-->
+                    <li><a class="navlink" href="index.html">Home</a></li> <!-- List/ elemen item daftar yang berisi tautan ke halaman "Home" dan class="navlink" adalah atribut kelas untuk tautan menu -->
+                    <li><a class="navlink" href="collections.html">Collections</a></li> <!--elemen item daftar yang berisi tautan ke halaman "Home" dan class="navlink" adalah atribut kelas untuk tautan menu-->
+                    <li><a class="navlink" href="contactus.html">Contact Us</a></li> <!--elemen item daftar yang berisi tautan ke halaman "Home" dan class="navlink" adalah atribut kelas untuk tautan menu-->
+                    <li><a class="navlink" href="aboutus.html">About Us</a></li> <!--elemen item daftar yang berisi tautan ke halaman "Home" dan class="navlink" adalah atribut kelas untuk tautan menu-->
+                    <li><a class="navlink" href="checkout.html">Cart
+                        <img src="images/cart.png" /> </a></li>
+                    
+                </ul> <!--menutup elemen unordered list-->
+            </nav> <!--menutup elemen navigasi-->
+        </header> <!--menutup bagian kepala dari halaman web-->
+        <div id="welcomeimage"> <!--elemen div yang menunjukkan gambar selamat datang-->
+            <img src="images/furnitureheader.png" /> <!--elemen gambar yang menunjukkan gambar header untuk selamat datang dan src adalah atribut yang menunjukkan lokasi gambar-->
+        </div> <!--menutup elemen div-->
+        <div id="furnitureofthemonth"> <!--elemen div yang menunjukkan gambar "Furniture of the Month"-->
+            <img src="images/cotm.jpg" /> <!--elemen gambar yang menunjukkan gambar "Furniture of the Month" dan src adalah atribut yang menunjukkan lokasi gambar-->
+        </div> <!--menutup elemen div-->
+        <section id="welcometext"> <!--memiliki atribut id dengan nilai welcometext. Ini digunakan untuk menandai bagian teks sambutan.-->
+            <header>Welcome to Wood Premium Furniture!</header> <!--menampilkan judul sambutan-->
+            <span> <!--digunakan untuk mengelompokkan teks dalam bagian sambutan.-->
+                Explore our carefully curated collection, blending skilled craftsmanship with contemporary aesthetics. From classic designs to the most modern, we offer a diverse range to suit your taste and lifestyle. Welcome to Wood Premium Furniture Store, where every click brings you closer to realizing your home dreams. <!--teks yang menjelaskan tentang koleksi perabot premium kayu dan menyoroti keberagaman dalam desain dan kualitas.-->
+            <p><mark>Note that our store is closed on Christmas eve and Christmas Day.</mark></p> <!--paragraf yang menyoroti catatan bahwa toko ditutup pada malam Natal dan Hari Natal.-->
+            </span> <!--menutup elemen <span> yang mengelompokkan teks dalam bagian sambutan.-->
+        </section> <!--penutup elemen <section>-->
+        
+        
+            <aside id="events"> <!--memiliki atribut id dengan nilai events. Ini digunakan untuk menandai bagian yang berisi informasi tambahan yang berbeda dari konten utama.-->
+            <header>Here's what happening!</header> <!--menampilkan judul "Here's what happening!" untuk bagian aside.-->
+            <ul> <!--daftar tak terurut untuk menampilkan daftar kejadian yang sedang terjadi.-->
+                <li><a href="#">New Furniture added</a></li> <!--item daftar yang menunjukkan beberapa kejadian yang sedang terjadi, masing-masing dengan tautan ke "#" yang akan diarahkan ke lokasi yang sesuai.-->
+                <li><a href="#">Store redecorated</a></li> <!--item daftar yang menunjukkan beberapa kejadian yang sedang terjadi, masing-masing dengan tautan ke "#" yang akan diarahkan ke lokasi yang sesuai.-->
+                <li><a href="#">New website launched</a></li> <!--item daftar yang menunjukkan beberapa kejadian yang sedang terjadi, masing-masing dengan tautan ke "#" yang akan diarahkan ke lokasi yang sesuai.-->
+            </ul> <!--menutup elemen <ul>-->
+                <br>
+        </aside> <!--menutup elemen <aside> -->
+            
+        <section id="bestsellers"> <!--memiliki atribut id dengan nilai bestsellers. Ini digunakan untuk menandai bagian produk-produk terlaris.-->
+            <header>Bestsellers @ Wood Furniture </header> <!--menampilkan judul "Bestsellers @ Wood Furniture" untuk bagian produk terlaris.-->
+            <section class="furniturebestsellers"> <!--memiliki atribut class dengan nilai furniturebestsellers. Ini digunakan untuk menandai bagian yang berisi produk-produk terlaris.-->
+                <header class="backgroundgradient">Furniture</header> <!--menampilkan judul "Furniture" dengan latar belakang gradien.-->
+                <article class="productarticle"> <!--memiliki atribut class dengan nilai productarticle. Ini digunakan untuk menandai artikel produk.-->
+                    <figure> <!--menampilkan gambar produk-->
+                        <img class="productarticlethumbnail" src="images/furniture/row_dt001_0.jpg"/> <!--gambar tersebut memiliki atribut class dengan nilai productarticlethumbnail.-->
+                    </figure> <!--penutup elemen <figure> -->
+                <header>
+                    <span class="productarticlename">
+                        <a href="productdetails1.html">Furniture 1</a>
+                    </span>
+                </header> <!--menampilkan nama produk "Furniture 1" dengan tautan ke halaman detail produk.-->
+                <p class="productarticleprice">$120</p> <!--menampilkan harga produk $120.-->
+                <div class="button" id="testButton">Add to Cart</div> <!--menampilkan tombol "Add to Cart" untuk menambahkan produk ke keranjang belanja.-->
+                </article> <!--penutup elemen <article> -->
+                <article class="productarticle"> <!-- Mulai artikel produk -->
+                    <figure> <!-- Gambar produk -->
+                        <img class="productarticlethumbnail" src="images/furniture/row_dt002_0.jpg"/>
+                    </figure>
+                <header> <!-- Judul produk -->
+                    <span class="productarticlename">
+                        <a href="productdetails2.html">Furniture 2</a>
+                    </span>
+                </header>
+                <p class="productarticleprice">$146</p> <!-- Harga produk -->
+                <div class="button" id="testButton">Add to Cart</div> <!-- Tombol "Add to Cart" -->
+                </article> <!-- Selesai artikel produk -->
+                <article class="productarticle"> <!-- Mulai artikel produk -->
+                    <figure> <!-- Gambar produk -->
+                        <img class="productarticlethumbnail" src="images/furniture/row_dt003_0.jpg"/>
+                    </figure>
+                    <header> <!-- Judul produk -->
+                        <span class="productarticlename">
+                            <a href="productdetails3.html">Furniture 3</a>
+                        </span>
+                    </header>
+                    <p class="productarticleprice">$335</p> <!-- Harga produk -->
+                    <div class="button" id="testButton">Add to Cart</div> <!-- Tombol "Add to Cart" -->
+                </article> <!-- Selesai artikel produk -->
+            
+            </section> <!-- Selesai bagian daftar produk terlaris (bagian ketiga) -->
+        </section>
+        
+            <section class="accessoriesbestsellers">
+            <header class="backgroundgradient">Accessories</header> <!-- Judul kategori aksesori -->    
+                <article class="productarticle"> <!-- Mulai artikel aksesori -->
+                <figure> <!-- Gambar aksesori -->
+                    <img class="productarticlethumbnail" src="images/furniture/row_ac001_0.jpg"/>
+                </figure>
+                <header> <!-- Judul aksesori -->
+                    <span class="productarticlename">
+                        <a href="Acdetails1.html">Accessories 1</a>
+                    </span>
+                </header>
+                <p class="productarticleprice">$95</p> <!-- Harga aksesori -->
+                <div class="button">Add to Cart</div> <!-- Tombol "Add to Cart" -->
+                </article> <!-- Selesai artikel aksesori -->
+                <article class="productarticle"> <!-- Mulai artikel aksesori -->
+                    <figure> <!-- Gambar aksesori -->
+                        <img class="productarticlethumbnail" src="images/furniture/row_ac003_5.jpg"/>
+                    </figure>
+                    <header> <!-- Judul aksesori -->
+                        <span class="productarticlename">
+                            <a href="Acdetails2.html">Accessories 2</a>
+                        </span>
+                    </header>
+                    <p class="productarticleprice">$135</p> <!-- Harga aksesori -->
+                    <div class="button">Add to Cart</div> <!-- Tombol "Add to Cart" -->
+                </article> <!-- Selesai artikel aksesori -->
+                <article class="productarticle"> <!-- Mulai artikel aksesori -->
+                    <figure> <!-- Gambar aksesori -->
+                        <img class="productarticlethumbnail" src="images/furniture/row_ac015_2.jpg"/>
+                    </figure>
+                    <header> <!-- Judul aksesori -->
+                        <span class="productarticlename">
+                            <a href="Acdetails3.html">Accessories 3</a>
+                        </span>
+                    </header>
+                    <p class="productarticleprice">$150</p> <!-- Harga aksesori -->
+                    <div class="button">Add to Cart</div> <!-- Tombol "Add to Cart" -->
+                </article> <!-- Selesai artikel aksesori -->
+            </section> <!-- Selesai bagian daftar aksesori terlaris -->
+        </section> <!-- Selesai bagian produk terlaris -->
+        <br>
+        <footer>
+            <p>Our address is <address>500 Dover Rd, Singapore 139651</address></p> <!-- Alamat toko -->
+            <p class="textcontent">All site contents is copyright %copy;
+                <a class='mainlink' href="http://woodfurniturestore.com">Wood Premium Furniture Store</a>
+            </p> <!-- Hak cipta dan tautan ke situs web -->
+            <p class="smalltext">This Page was Generated on<time> 09:05:12</time></p> <!-- Waktu pembuatan halaman -->
+        </footer>
+    </body> <!-- Menutup elemen badan dokumen -->
+    </html> <!-- Menutup elemen HTML -->
